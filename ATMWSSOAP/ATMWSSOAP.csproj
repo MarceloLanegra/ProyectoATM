@@ -70,12 +70,12 @@
     </Compile>
     <Compile Include="Dominio\Cliente.cs" />
     <Compile Include="IATMService.cs" />
+    <Compile Include="Persistencia\ClienteDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Errores\" />
-    <Folder Include="Persistencia\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
