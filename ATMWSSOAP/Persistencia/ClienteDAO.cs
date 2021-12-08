@@ -32,7 +32,48 @@ namespace ATMWSSOAP.Persistencia
 
         public Cliente Obtener(string ruc)
         {
+            Cliente clienteEncontrado = null;
+            string sql = "SELECT * FROM location_owners WHERE ruc=@ruc";
+            using (SqlConnection conexion = new SqlConnection(CadenaConexion))
+            {
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand(sql, conexion))
+                {
+                    comando.Parameters.Add(new SqlParameter("@ruc", ruc));
+                    using (SqlDataReader resultado = comando.ExecuteReader())
+                    {
+                        if (resultado.Read())
+                        {
+                            clienteEncontrado = new Cliente()
+                            {
+                                Nombre = (string)resultado["name"],
+                                Empresa = (string)resultado["business_name"],
+                                Ruc = (string)resultado["ruc"],
+                            };
+                        }
+                    }
+                }
+                return clienteEncontrado;
+            }
+        }
 
+        public Cliente Modificar(Cliente clienteAModificar)
+        {
+            Cliente clienteModificado;
+            string sql = "UPDATE location_owners SET name=@name,business_name=@business_name,ruc=@ruc WHERE ruc=@ruc";
+            using (SqlConnection conexion = new SqlConnection(CadenaConexion))
+            {
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand(sql, conexion))
+                {
+                    comando.Parameters.Add(new SqlParameter("@name", clienteAModificar.Nombre));
+                    comando.Parameters.Add(new SqlParameter("@name_business", clienteAModificar.Empresa));
+                    comando.Parameters.Add(new SqlParameter("@ruc", clienteAModificar.Ruc));
+                    comando.ExecuteNonQuery();
+                }
+                clienteModificado = Obtener(clienteAModificar.Codigoalumno);
+                return clienteModificado;
+            }
         }
     }
 }
