@@ -1,0 +1,7 @@
+C:\proyectos\personal\ProyectoATM\ATMWSSOAP\bin\ATMWSSOAP.dll.config
+C:\proyectos\personal\ProyectoATM\ATMWSSOAP\bin\ATMWSSOAP.dll
+C:\proyectos\personal\ProyectoATM\ATMWSSOAP\bin\ATMWSSOAP.pdb
+C:\proyectos\personal\ProyectoATM\ATMWSSOAP\obj\Debug\ATMWSSOAP.csproj.CoreCompileInputs.cache
+C:\proyectos\personal\ProyectoATM\ATMWSSOAP\obj\Debug\ATMWSSOAP.dll
+C:\proyectos\personal\ProyectoATM\ATMWSSOAP\obj\Debug\ATMWSSOAP.pdb
+C:\proyectos\personal\ProyectoATM\ATMWSSOAP\obj\Debug\ATMWSSOAP.csproj.AssemblyReference.cache
