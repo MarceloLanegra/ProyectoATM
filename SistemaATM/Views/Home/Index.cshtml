@@ -3,29 +3,98 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <h1>Sistema ATMs</h1>
+    <p class="lead">Sistema que permite el control de requerimientos de ATMs'</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
+    <div class="col-md-3">
+        <h2>Requerimientos</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Asigna y consulta el estado de los requerimientos recibidos.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p>
+            <ul class="btn btn-default">
+                <li>@Html.ActionLink("Gestiona Requerimientos","Index","Requerimientos")</li>
+            </ul>
+        </p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="col-md-3">
+        <h2>Citas</h2>
+        <p>
+            Envía correo a cliente confirmando la cita pactada.
+        </p>
+        <p>
+            <ul class="btn btn-default">
+                <li>@Html.ActionLink("Mail Cita", "Index", "Citas")</li>
+            </ul>
+        </p>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-md-3">
+        <h2>Usuarios</h2>
+        <p>
+            CRUD de usuarios.
+        </p>
+        <p>
+            <ul class="btn btn-default">
+                <li>@Html.ActionLink("Gestiona Usuarios", "Index", "Usuarios")</li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-3">
+        <h2>Perfiles</h2>
+        <p>
+            CRUD de perfiles.
+        </p>
+        <p>
+            <ul class="btn btn-default">
+                <li>@Html.ActionLink("Gestiona Perfiles", "Index", "Perfiles")</li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-3">
+        <h2>ATMs</h2>
+        <p>
+            CRUD de atms.
+        </p>
+        <p>
+            <ul class="btn btn-default">
+                <li>@Html.ActionLink("Gestiona ATMs", "Index", "ATMs")</li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-3">
+        <h2>Clientes</h2>
+        <p>
+            CRUD de clientes.
+        </p>
+        <p>
+            <ul class="btn btn-default">
+                <li>@Html.ActionLink("Gestiona Clientes", "Index", "Clientes")</li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-3">
+        <h2>Locaciones</h2>
+        <p>
+            CRUD de locaciones.
+        </p>
+        <p>
+            <ul class="btn btn-default">
+                <li>@Html.ActionLink("Gestiona Locaciones", "Index", "Locaciones")</li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-3">
+        <h2>Mailing</h2>
+        <p>
+            Envía correo a cliente confirmando culminación de requerimiento.
+        </p>
+        <p>
+            <ul class="btn btn-default">
+                <li>@Html.ActionLink("Mail Conformidad", "Index", "Mailing")</li>
+            </ul>
+        </p>
     </div>
 </div>
